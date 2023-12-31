@@ -23,7 +23,7 @@ yarn --version
 
 拉取 sub-web 程序，并进入 sub-web 文件夹
 
-git clone https://github.com/CareyWang/sub-web.git
+git clone https://github.com/2275273/sub-web-bamo.git
 
 cd sub-web-bamo
 
