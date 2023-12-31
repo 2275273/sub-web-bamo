@@ -1,13 +1,36 @@
-# sub-web-modify
-[本项目](https://suburl.v1.mk)重制[原项目](https://github.com/CareyWang/sub-web)CSS样式，兼容node18版本，解决大部分布局细节问题，增加“暗黑模式”，默认自动切换亮/暗模式（点击“太阳/月亮”图标可手动切换），增加“高级功能”点击显示/隐藏，添加短链接选择/自定义功能，增加近百条远程配置，新增[sub-web聚合API](https://github.com/youshandefeiyang/sub-web-api)，增加从短链接中获取订阅信息并返回至前端界面，增加上传自定义远程配置/JS进阶排序节点/JS进阶筛选节点等功能，感兴趣的朋友可以自建API服务，增加URL传参设置自定义后端<br/>
-## 效果预览：
-![avatar](https://raw.githubusercontent.com/youshandefeiyang/webcdn/main/sub-web-modify.GIF)
-### 使用方法：
-建议使用Docker一键部署:
-```
-docker run -d --restart unless-stopped --privileged=true -p 8090:80 --name sub-web-modify youshandefeiyang/sub-web-modify
-```
-访问地址举例:
-```
-http://192.168.10.1:8090/?backend=https://api.v1.mk
-```
+
+依次运行下面四行代码，若是 Debian/Ubuntu 系统，请自行替换下面前两行命令中的 yum 为 apt
+
+yum update -y
+
+curl -fsSL https://deb.nodesource.com/setup_16.x | 
+sudo -E bash -
+sudo apt-get install -y nodejs
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+cnpm install -g yarn
+
+
+检测版本号
+node -v
+v16.19.0
+
+yarn --version
+1.22.21
+
+
+拉取 sub-web 程序，并进入 sub-web 文件夹
+
+git clone https://github.com/CareyWang/sub-web.git
+cd sub-web-bamo
+
+
+在项目目录中安装构建依赖项，构建的过程稍微有点长
+yarn install
+
+使用 webpack 运行 Web 客户端以进行本地开发。
+yarn serve
+
+断开或者退出当前环境 CTRL+C，打包网页
+yarn build
