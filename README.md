@@ -29,10 +29,13 @@ cd sub-web-bamo
 
 
 在项目目录中安装构建依赖项，构建的过程稍微有点长
+
 yarn install
 
 使用 webpack 运行 Web 客户端以进行本地开发。
+
 yarn serve
 
 断开或者退出当前环境 CTRL+C，打包网页
+
 yarn build
