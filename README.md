@@ -13,6 +13,7 @@ cnpm install -g yarn
 
 
 检测版本号
+
 node -v
 v16.19.0
 
@@ -23,6 +24,7 @@ yarn --version
 拉取 sub-web 程序，并进入 sub-web 文件夹
 
 git clone https://github.com/CareyWang/sub-web.git
+
 cd sub-web-bamo
 
 
