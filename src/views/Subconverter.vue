@@ -448,7 +448,7 @@ export default {
             options: [
               {
                 label: "大全版本规则--非本人不适用，不要选",
-                value: "https://github.com/2275273/subconverter/raw/main/rule%20by%20%20myself_DNS%E5%A4%87%E4%BB%BD.ini"
+                value: "https://raw.githubusercontent.com/2275273/subconverter/main/rule_by_myself.ini"
               },
               {
                 label: "防泄露版本规则--非本人不适用，不要选",
