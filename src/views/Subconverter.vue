@@ -423,7 +423,8 @@ export default {
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
-		  "巴莫专用后端": "https://sub.239000.xyz",
+		  "巴莫自用增强后端": "https://nas.239000.xyz:25500",
+	  "巴莫自用原版后端": "https://nas.239000.xyz:25501",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://apiurl.v1.mk",
           "肥羊备用后端【vless reality+hy1+hy2】": "https://sub.d1.mk",
           "つつ-多地防失联【负载均衡+国内优化】": "https://api.tsutsu.one",
@@ -433,7 +434,8 @@ export default {
           "sub作者&lhie1提供": "https://api.dler.io",
         },
         backendOptions: [
-		  {value: "https://sub.239000.xyz/sub?"},
+		  {value: "https://nas.239000.xyz:25500/sub?"},
+	  {value: "https://nas.239000.xyz:25501/sub?"},
           {value: "https://apiurl.v1.mk"},
           {value: "https://sub.d1.mk"},
           {value: "https://api.tsutsu.one"},
@@ -447,11 +449,11 @@ export default {
             label: "巴莫自用规则",
             options: [
               {
-                label: "大全版本规则--非本人不适用，不要选",
+                label: "大全版本自用规则--非本人不适用，不要选",
                 value: "https://raw.githubusercontent.com/2275273/subconverter/main/rule_by_myself.ini"
               },
               {
-                label: "防泄露版本规则--非本人不适用，不要选",
+                label: "防泄露版本自用规则--非本人不适用，不要选",
                 value: "https://raw.githubusercontent.com/2275273/subconverter/main/rule_DNS.ini"
               }
             ]
@@ -555,7 +557,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "clash",
-        customBackend: this.getUrlParam() == "" ? "https://sub.239000.xyz/sub?" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://nas.239000.xyz:25501/sub?" : this.getUrlParam(),
         shortType: "https://suo.yt/short",
         remoteConfig: "https://github.com/2275273/subconverter/raw/main/rule%20by%20%20myself_DNS%E5%A4%87%E4%BB%BD.ini",
         excludeRemarks: "",
