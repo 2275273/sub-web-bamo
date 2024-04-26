@@ -424,7 +424,7 @@ export default {
         },
         customBackend: {
 		  "巴莫专用后端": "https://sub.239000.xyz",
-          "肥羊增强型后端【vless reality+hy1+hy2】": "https://api.v1.mk",
+          "肥羊增强型后端【vless reality+hy1+hy2】": "https://apiurl.v1.mk",
           "肥羊备用后端【vless reality+hy1+hy2】": "https://sub.d1.mk",
           "つつ-多地防失联【负载均衡+国内优化】": "https://api.tsutsu.one",
           nameless13提供: "https://www.nameless13.com",
@@ -434,7 +434,7 @@ export default {
         },
         backendOptions: [
 		  {value: "https://sub.239000.xyz/sub?"},
-          {value: "https://api.v1.mk"},
+          {value: "https://apiurl.v1.mk"},
           {value: "https://sub.d1.mk"},
           {value: "https://api.tsutsu.one"},
           {value: "https://www.nameless13.com"},
