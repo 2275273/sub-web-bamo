@@ -423,8 +423,8 @@ export default {
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
-		  "巴莫自用增强后端": "http://nas.239000.xyz:25500",
-	  "巴莫自用原版后端": "http://nas.239000.xyz:25501",
+		  "巴莫自用增强后端": "https://nas.239000.xyz:9393",
+     	  "巴莫自用原版后端": "https://nas.239000.xyz:9494",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://apiurl.v1.mk",
           "肥羊备用后端【vless reality+hy1+hy2】": "https://sub.d1.mk",
           "つつ-多地防失联【负载均衡+国内优化】": "https://api.tsutsu.one",
@@ -434,8 +434,8 @@ export default {
           "sub作者&lhie1提供": "https://api.dler.io",
         },
         backendOptions: [
-		  {value: "https://nas.239000.xyz:25500/sub?"},
-	  {value: "https://nas.239000.xyz:25501/sub?"},
+		  {value: "https://nas.239000.xyz:9393/sub?"},
+	  {value: "https://nas.239000.xyz:9393/sub?"},
           {value: "https://apiurl.v1.mk"},
           {value: "https://sub.d1.mk"},
           {value: "https://api.tsutsu.one"},
@@ -557,7 +557,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "clash",
-        customBackend: this.getUrlParam() == "" ? "http://nas.239000.xyz:25500" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://nas.239000.xyz:9393" : this.getUrlParam(),
         shortType: "https://suo.yt/short",
         remoteConfig: "https://raw.githubusercontent.com/2275273/subconverter/main/rule_by_myself.ini",
         excludeRemarks: "",
