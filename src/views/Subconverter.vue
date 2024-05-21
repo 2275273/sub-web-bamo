@@ -628,38 +628,6 @@ export default {
       }
       return "";
     },
-    anhei() {
-      const getLocalTheme = window.localStorage.getItem("localTheme");
-      const lightMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)');
-      const darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
-      if (getLocalTheme) {
-        document.getElementsByTagName('body')[0].className = getLocalTheme;
-      } //读取localstorage，优先级最高！
-      else if (getLocalTheme == null || getLocalTheme == "undefined" || getLocalTheme == "") {
-        if (new Date().getHours() >= 19 || new Date().getHours() < 7) {
-          document.getElementsByTagName('body')[0].setAttribute('class', 'dark-mode');
-        } else {
-          document.getElementsByTagName('body')[0].setAttribute('class', 'light-mode');
-        } //根据当前时间来判断，用来对付QQ等不支持媒体变量查询的浏览器
-        if (lightMode && lightMode.matches) {
-          document.getElementsByTagName('body')[0].setAttribute('class', 'light-mode');
-        }
-        if (darkMode && darkMode.matches) {
-          document.getElementsByTagName('body')[0].setAttribute('class', 'dark-mode');
-        } //根据窗口主题来判断当前主题！
-      }
-    },
-    change() {
-      var zhuti = document.getElementsByTagName('body')[0].className;
-      if (zhuti === 'light-mode') {
-        document.getElementsByTagName('body')[0].setAttribute('class', 'dark-mode');
-        window.localStorage.setItem('localTheme', 'dark-mode');
-      }
-      if (zhuti === 'dark-mode') {
-        document.getElementsByTagName('body')[0].setAttribute('class', 'light-mode');
-        window.localStorage.setItem('localTheme', 'light-mode');
-      }
-    },
     onCopy() {
       this.$message.success("已复制");
     },
