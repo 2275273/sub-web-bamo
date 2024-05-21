@@ -179,12 +179,6 @@
               </el-form-item>
               <div style="margin-top: 30px"></div>
               <el-divider content-position="center">
-                <el-button
-                    type="zhuti"
-                    @click="change">
-                  <i id="rijian" class="el-icon-sunny"></i>
-                  <i id="yejian" class="el-icon-moon"></i>
-                </el-button>
               </el-divider>
               <el-form-item label="定制订阅:">
                 <el-input class="copy-content" disabled v-model="customSubUrl">
