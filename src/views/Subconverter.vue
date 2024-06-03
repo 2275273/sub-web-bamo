@@ -551,7 +551,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "clash",
-        customBackend: this.getUrlParam() == "" ? "https://nas.239000.xyz:9393" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://zhuanhuan.239000.xyz" : this.getUrlParam(),
         shortType: "https://suo.yt/short",
         remoteConfig: "https://raw.githubusercontent.com/2275273/subconverter/main/rule_by_myself.ini",
         excludeRemarks: "",
